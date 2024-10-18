@@ -4,286 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Professional Portfolio</title>
+    <title>Project One - My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-        }
-
+        /* Insira o mesmo estilo que você criou anteriormente */
+        /* Por exemplo: */
         body {
             background-color: #f5f5f7;
             color: #1d1d1f;
+            font-family: 'Roboto', sans-serif;
         }
-
         header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             padding: 20px 50px;
             background-color: #ffffff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            position: fixed;
-            width: 100%;
-            z-index: 100;
+            display: flex;
+            justify-content: space-between;
         }
-
         header h1 {
             font-size: 24px;
-            font-weight: 500;
         }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: #1d1d1f;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #0071e3;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background: url('https://via.placeholder.com/1920x1080') center center no-repeat;
-            background-size: cover;
-            position: relative;
-        }
-
-        .hero h2 {
-            font-size: 48px;
-            color: white;
-            font-weight: 300;
-        }
-
-        .hero p {
-            font-size: 24px;
-            color: white;
-            margin-top: 10px;
-            font-weight: 300;
-        }
-
-        .hero a {
-            padding: 10px 20px;
-            border: 2px solid white;
-            color: white;
-            text-decoration: none;
-            margin-top: 20px;
-            display: inline-block;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .hero a:hover {
-            background-color: white;
-            color: #1d1d1f;
-        }
-
-        section {
+        .project-content {
             padding: 100px 50px;
         }
-
-        .about {
+        .project-content h2 {
+            font-size: 36px;
+        }
+        .project-images {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-        .about img {
-            max-width: 50%;
-            border-radius: 10px;
-        }
-
-        .about-text {
-            max-width: 45%;
-        }
-
-        .about h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            font-weight: 500;
-        }
-
-        .about p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: #6e6e73;
-        }
-
-        .projects {
-            text-align: center;
-        }
-
-        .projects h2 {
-            font-size: 36px;
-            margin-bottom: 50px;
-            font-weight: 500;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            margin-top: 20px;
         }
-
-        .project {
-            background-color: #ffffff;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        .project-images img {
+            max-width: 100%;
+            height: auto;
             border-radius: 10px;
-            overflow: hidden;
-            transition: transform 0.3s ease;
         }
-
-        .project:hover {
-            transform: scale(1.05);
-        }
-
-        .project img {
-            width: 100%;
-        }
-
-        .project h3 {
-            font-size: 24px;
-            margin: 20px;
-            font-weight: 500;
-        }
-
-        .project p {
-            font-size: 16px;
-            margin: 0 20px 20px 20px;
-            color: #6e6e73;
-        }
-
-        footer {
-            background-color: #1d1d1f;
-            color: white;
-            padding: 50px;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 16px;
-        }
-
-        /* Animations */
-        .hero h2 {
-            animation: slideDown 1s ease forwards;
-            opacity: 0;
-        }
-
-        .hero p {
-            animation: slideUp 1s ease 0.5s forwards;
-            opacity: 0;
-        }
-
-        .hero a {
-            animation: fadeIn 1.5s ease 1s forwards;
-            opacity: 0;
-        }
-
-        @keyframes slideDown {
-            from {
-                transform: translateY(-50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideUp {
-            from {
-                transform: translateY(50px);
-                opacity: 0;
-            }
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
     </style>
 </head>
 <body>
 
     <header>
-        <h1>My Portfolio</h1>
+        <h1>Project One</h1>
         <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <a href="index.html">Back to Portfolio</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to My World</h2>
-        <p>Creating innovative and impactful digital experiences</p>
-        <a href="#projects">Explore My Work</a>
-    </section>
-
-    <section id="about" class="about">
-        <img src="https://via.placeholder.com/500x500" alt="About Me">
-        <div class="about-text">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin, libero eget posuere facilisis, odio arcu vehicula mi, et vestibulum mi metus vel ex. Vivamus sit amet sem ut urna tempus egestas.</p>
+    <div class="project-content">
+        <h2>Project One Overview</h2>
+        <p>This project is a modern website with a focus on user experience and performance.</p>
+        <div class="project-images">
+            <img src="https://via.placeholder.com/400x300" alt="Project Image 1">
+            <img src="https://via.placeholder.com/400x300" alt="Project Image 2">
+            <img src="https://via.placeholder.com/400x300" alt="Project Image 3">
         </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <img src="https://via.placeholder.com/400x300" alt="Project 1">
-                <h3>Project One</h3>
-                <p>A modern website with a focus on user experience and performance.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/400x300" alt="Project 2">
-                <h3>Project Two</h3>
-                <p>An innovative mobile app that simplifies daily tasks.</p>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/400x300" alt="Project 3">
-                <h3>Project Three</h3>
-                <p>A branding and design project for a local business.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <p>© 2024 Your Name. All rights reserved.</p>
-    </footer>
+    </div>
 
 </body>
 </html>
