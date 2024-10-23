@@ -161,6 +161,10 @@
             width: 100%;
         }
 
+        .project h3, .project p {
+            color: #6e6e73; /* Mantém a cor cinza escuro para o texto */
+        }
+
         .project h3 {
             font-size: 24px;
             margin: 20px;
@@ -170,7 +174,16 @@
         .project p {
             font-size: 16px;
             margin: 0 20px 20px 20px;
-            color: #6e6e73;
+        }
+
+        /* Remove sublinhado e define a cor do texto do link */
+        .projects-grid a {
+            text-decoration: none; /* Remove o sublinhado */
+            color: inherit; /* Herda a cor do pai */
+        }
+
+        .projects-grid a:hover {
+            color: #333; /* Cor ao passar o mouse (opcional) */
         }
 
         footer {
@@ -249,7 +262,7 @@
     <section class="hero">
         <h2>Seja bem vindo ao meu Portfólio de Arte Digital</h2>
         <p>O caminho é o objetivo.</p>
-<p>Sidartha Gautama</p>
+        <p>Sidartha Gautama</p>
         <a href="#projects">Explore o meu trabalho</a>
     </section>
 
@@ -263,24 +276,15 @@
 
     <section id="projects" class="projects">
         <h2>Meus projetos</h2>
-        <style>
-    .projects-grid a {
-        text-decoration: none; /* Remove o sublinhado */
-        color: #6e6e73; /* Define a cor das letras (cinza escuro) */
-    }
 
-    .projects-grid a:hover {
-        color: #333; /* Cor ao passar o mouse (opcional) */
-    }
-</style>
-
-<div class="projects-grid">
-    <div class="project">
-        <a href="https://testegb4w.my.canva.site/portfoliogiorno">
-            <img src="https://i.ibb.co/mXBsfym/Design-sem-nome-1.png" alt="Project 1">
-            <h3>Giorno</h3>
-            <p>Cliente com foco em manipulação de imagem</p>
-    </div>
+        <div class="projects-grid">
+            <div class="project">
+                <a href="https://testegb4w.my.canva.site/portfoliogiorno">
+                    <img src="https://i.ibb.co/mXBsfym/Design-sem-nome-1.png" alt="Project 1">
+                    <h3>Giorno</h3>
+                    <p>Cliente com foco em manipulação de imagem</p>
+                </a>
+            </div>
             <div class="project">
                 <img src="https://via.placeholder.com/400x300" alt="Project 2">
                 <h3>Project Two</h3>
@@ -297,9 +301,6 @@
     <footer id="contact">
         <p>© 2024 Your Name. All rights reserved.</p>
     </footer>
-
-</body>
-</html>
 
 </body>
 </html>
