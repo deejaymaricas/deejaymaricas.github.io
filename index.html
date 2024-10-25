@@ -22,7 +22,8 @@
 
         header {
             display: flex;
-            align-items: center; /* Alinha verticalmente o logo e o título */
+            justify-content: space-between;
+            align-items: center;
             padding: 20px 50px;
             background-color: #ffffff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -31,16 +32,18 @@
             z-index: 100;
         }
 
-        .logo {
-            width: 20%; /* Reduz o tamanho do logo para 20% */
-            max-width: 50px; /* Limita a largura máxima, ajuste conforme necessário */
-            margin-right: 15px; /* Espaçamento entre o logo e o título */
+        header .logo {
+            width: 20%; /* Tamanho do logo reduzido para 20% */
         }
 
         header h1 {
             font-size: 24px;
             font-weight: 500;
-            margin: 0; /* Remove a margem padrão do título */
+            margin-left: 10px; /* Espaço entre o logo e o título */
+        }
+
+        nav {
+            margin-left: auto; /* Move a barra de navegação para a direita */
         }
 
         nav ul {
@@ -114,6 +117,7 @@
             justify-content: center; /* Centraliza a seção */
             flex-wrap: wrap;
             text-align: left; /* Alinha o texto à esquerda */
+            margin-top: 100px; /* Aumentando espaço entre a seção 'Quem sou eu?' e a anterior */
         }
 
         .about img {
@@ -257,25 +261,25 @@
 </head>
 <body>
 
-<header>
-    <img src="https://i.ibb.co/7y3L6Tr/Black-and-White-Minimalist-Monochrome-Letter-M-Professional-Business-Salon-Logo.png" alt="Logo" class="logo">
-    <h1>Portfólio Mariana Moura</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <img src="https://i.ibb.co/PTmQwJz/SEI-LA-4.png" alt="Logo" class="logo">
+        <h1>Portfólio Mariana Moura</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<section class="hero">
-    <h2>Seja bem vindo ao meu Portfólio de Arte Digital</h2>
-    <p>O caminho é o objetivo.</p>
-    <a href="#projects">Explore o meu trabalho</a>
-</section>
+    <section class="hero">
+        <h2>Seja bem-vindo ao meu Portfólio de Arte Digital</h2>
+        <p>O caminho é o objetivo.</p>
+        <a href="#projects">Explore o meu trabalho</a>
+    </section>
 
-<section id="about" class="about">
+    <section id="about" class="about">
     <img src="https://i.ibb.co/2Wndzbg/euuu.png" alt="About Me">
     <div class="about-text">
         <h2>Quem sou eu?</h2>
