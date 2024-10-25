@@ -22,8 +22,7 @@
 
         header {
             display: flex;
-            flex-direction: column; /* Mudado para coluna para colocar logo em cima do título */
-            align-items: center; /* Centraliza o conteúdo do cabeçalho */
+            align-items: center; /* Centraliza verticalmente */
             padding: 20px 50px;
             background-color: #ffffff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -35,19 +34,13 @@
         header h1 {
             font-size: 24px;
             font-weight: 500;
-            margin-top: 10px; /* Adicionando um espaço acima do título */
-        }
-
-        header img {
-            max-width: 100px; /* Define o tamanho máximo da imagem do logo */
-            margin-bottom: 10px; /* Adiciona espaço abaixo do logo */
-            animation: fadeIn 1s ease forwards; /* Adicionando animação */
-            opacity: 0; /* Inicialmente invisível para animação */
+            margin-left: 20px; /* Adicionando um espaço à esquerda do título */
         }
 
         nav ul {
             list-style: none;
             display: flex;
+            margin-left: auto; /* Alinha os itens do menu à direita */
         }
 
         nav ul li {
@@ -72,15 +65,24 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            position: relative; /* Para posicionar o logo acima do texto */
             background: url('https://i.ibb.co/kxmydW5/Portf-lio-Giorno.png') center center no-repeat;
             background-size: cover;
-            position: relative;
+        }
+
+        .hero img {
+            position: absolute; /* Logo posicionado em relação à hero */
+            top: 50px; /* Distância do topo */
+            z-index: 1; /* Coloca o logo acima do texto */
+            max-width: 100px; /* Define o tamanho máximo do logo */
         }
 
         .hero h2 {
             font-size: 48px;
             color: white;
             font-weight: 300;
+            position: relative; /* Para manter o texto acima do fundo */
+            z-index: 0; /* Abaixo do logo */
         }
 
         .hero p {
@@ -88,6 +90,8 @@
             color: white;
             margin-top: 10px;
             font-weight: 300;
+            position: relative; /* Para manter o texto acima do fundo */
+            z-index: 0; /* Abaixo do logo */
         }
 
         .hero a {
@@ -99,6 +103,8 @@
             display: inline-block;
             font-weight: 500;
             transition: all 0.3s ease;
+            position: relative; /* Para manter o texto acima do fundo */
+            z-index: 0; /* Abaixo do logo */
         }
 
         .hero a:hover {
@@ -112,10 +118,9 @@
 
         .about {
             display: flex;
-            align-items: center;
-            justify-content: center; /* Centralizando horizontalmente */
-            flex-wrap: wrap;
-            text-align: center; /* Centralizando o texto */
+            align-items: flex-start; /* Alinha o texto e a imagem no início */
+            justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+            text-align: left; /* Alinha o texto à esquerda */
         }
 
         .about img {
@@ -261,7 +266,6 @@
 <body>
 
     <header>
-        <img src="https://i.ibb.co/yfSG9N4/SEI-LA.png" alt="Logo">
         <h1>Portfólio Mariana Moura</h1>
         <nav>
             <ul>
@@ -273,6 +277,7 @@
     </header>
 
     <section class="hero">
+        <img src="https://i.ibb.co/yfSG9N4/SEI-LA.png" alt="Logo">
         <h2>Seja bem vindo ao meu Portfólio de Arte Digital</h2>
         <p>O caminho é o objetivo.</p>
         <a href="#projects">Explore o meu trabalho</a>
