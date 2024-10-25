@@ -22,8 +22,7 @@
 
         header {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
+            align-items: center; /* Alinha verticalmente o logo e o título */
             padding: 20px 50px;
             background-color: #ffffff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -32,9 +31,16 @@
             z-index: 100;
         }
 
+        .logo {
+            width: 20%; /* Reduz o tamanho do logo para 20% */
+            max-width: 50px; /* Limita a largura máxima, ajuste conforme necessário */
+            margin-right: 15px; /* Espaçamento entre o logo e o título */
+        }
+
         header h1 {
             font-size: 24px;
             font-weight: 500;
+            margin: 0; /* Remove a margem padrão do título */
         }
 
         nav ul {
@@ -251,8 +257,8 @@
 </head>
 <body>
 
-    <header>
-    <img src="https://i.ibb.co/PTmQwJz/SEI-LA-4.png" alt="Logo" class="logo">
+<header>
+    <img src="https://i.ibb.co/7y3L6Tr/Black-and-White-Minimalist-Monochrome-Letter-M-Professional-Business-Salon-Logo.png" alt="Logo" class="logo">
     <h1>Portfólio Mariana Moura</h1>
     <nav>
         <ul>
@@ -263,51 +269,54 @@
     </nav>
 </header>
 
-    <section class="hero">
-        <h2>Seja bem vindo ao meu Portfólio de Arte Digital</h2>
-        <p>O caminho é o objetivo.</p>
-        <a href="#projects">Explore o meu trabalho</a>
-    </section>
+<section class="hero">
+    <h2>Seja bem vindo ao meu Portfólio de Arte Digital</h2>
+    <p>O caminho é o objetivo.</p>
+    <a href="#projects">Explore o meu trabalho</a>
+</section>
 
-    <section id="about" class="about">
-        <img src="https://i.ibb.co/2Wndzbg/euuu.png" alt="About Me">
-        <div class="about-text">
-            <h2>Quem sou eu?</h2>
-            <p>Como <strong>designer plena</strong> com <strong>quatro anos de experiência</strong>, trago uma combinação sólida de habilidades técnicas e criatividade. Minha jornada como designer é marcada por <strong>certificações</strong> e <strong>diplomas</strong>, incluindo Adobe Illustrator e Photoshop, com mentores como <strong>Lucas Rosa</strong>, <strong>Alison Pawilak</strong> e <strong>Paula Cruz</strong> pela CreaHana. Atualmente estudo na <strong>FMU</strong> e na <strong>Escola SAGA</strong>, onde possuo diploma.</p>
-            <p>Minha <strong>expertise</strong> abrange produção de conteúdo para social media, propagandas, sites, concept art, impressos (livros, cartões, totens, stans e etc), ilustração digital e <strong>animação 2D</strong>, apoiando meu trabalho em um profundo conhecimento técnico. Já atuei em <strong>empresas de marketing</strong>, agências e como <strong>freelancer</strong>, totalizando <strong>cinco anos de prática</strong> freelance.</p>
-            <p>Sou conhecida por minha <strong>postura calma e centrada</strong>, sempre entregando resultados de qualidade. Minha habilidade em <strong>cumprir prazos</strong> é reforçada por minha propensão a superar expectativas, entregando antes mesmo do prazo final.</p>
-            <p>Na minha trajetória, enfrentei <strong>desafios de última hora</strong>, transformando obstáculos em oportunidades para demonstrar <strong>resiliência e eficiência</strong>. Minha paixão por manipulação digital se reflete em cada projeto, onde busco unir estética e funcionalidade.</p>
+<section id="about" class="about">
+    <img src="https://i.ibb.co/2Wndzbg/euuu.png" alt="About Me">
+    <div class="about-text">
+        <h2>Quem sou eu?</h2>
+        <p>Como <strong>designer plena</strong> com <strong>quatro anos de experiência</strong>, trago uma combinação sólida de habilidades técnicas e criatividade. Minha jornada como designer é marcada por <strong>certificações e diplomas</strong>, incluindo Adobe Illustrator e Photoshop, com mentores como <strong>Lucas Rosa</strong>, <strong>Alison Pawilak</strong> e <strong>Paula Cruz</strong> pela CreaHana. Atualmente estudo na <strong>FMU</strong> e na <strong>Escola SAGA</strong>, onde possuo diploma.</p>
+        <br>
+<p>Minha <strong>expertise</strong> abrange produção de conteúdo para social media, propagandas, sites, concept art, impressos (livros, cartões, totens, stans e etc), ilustração digital e <strong>animação 2D</strong>, apoiando meu trabalho em um profundo conhecimento técnico. Já atuei em <strong>agências e como freelancer.</strong> </p>
+        <br>
+<p>Sou conhecida por minha <strong>postura calma e centrada</strong>, sempre entregando resultados de qualidade. Minha habilidade em <strong>cumprir prazos</strong> é reforçada por minha propensão a superar expectativas, entregando antes mesmo do prazo final.</p>
+       <br> 
+<p>Na minha trajetória, enfrentei <strong>desafios de última hora</strong>, transformando obstáculos em oportunidades para demonstrar <strong>resiliência e eficiência</strong>. Minha paixão por manipulação digital se reflete em cada projeto, onde busco unir estética e funcionalidade.</p>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Meus projetos</h2>
+    <div class="projects-grid">
+        <div class="project">
+            <a href="https://testegb4w.my.canva.site/portfoliogiorno">
+                <img src="https://i.ibb.co/mXBsfym/Design-sem-nome-1.png" alt="Project 1">
+                <h3>Giorno</h3>
+                <p>Cliente com foco em manipulação de imagem</p>
+            </a>
         </div>
-    </section>
-
-    <section id="projects" class="projects">
-        <h2>Meus projetos</h2>
-        <div class="projects-grid">
-            <div class="project">
-                <a href="https://testegb4w.my.canva.site/portfoliogiorno">
-                    <img src="https://i.ibb.co/mXBsfym/Design-sem-nome-1.png" alt="Project 1">
-                    <h3>Giorno</h3>
-                    <p>Cliente com foco em manipulação de imagem</p>
-                </a>
-            </div>
-            <div class="project">
-                <a href="https://testegb4w.my.canva.site/duzz-digital">
-                    <img src="https://i.ibb.co/kg5H51q/duzzz.png" alt="Project 2">
-                    <h3>Duzz Digital</h3>
-                    <p>Branding Marketing Digital</p>
-                </a>
-            </div>
-            <div class="project">
-                <img src="https://via.placeholder.com/400x300" alt="Project 3">
-                <h3>Project Three</h3>
-                <p>A branding and design project for a local business.</p>
-            </div>
+        <div class="project">
+            <a href="https://testegb4w.my.canva.site/duzz-digital">
+                <img src="https://i.ibb.co/kg5H51q/duzzz.png" alt="Project 2">
+                <h3>Duzz Digital</h3>
+                <p>Branding Marketing Digital</p>
+            </a>
         </div>
-    </section>
+        <div class="project">
+            <img src="https://via.placeholder.com/400x300" alt="Project 3">
+            <h3>Project Three</h3>
+            <p>A branding and design project for a local business.</p>
+        </div>
+    </div>
+</section>
 
-    <footer id="contact">
-        <p>© 2024 Mariana Moura. Todos os direitos reservados.</p>
-    </footer>
+<footer id="contact">
+    <p>© 2024 Mariana Moura. Todos os direitos reservados.</p>
+</footer>
 
 </body>
 </html>
