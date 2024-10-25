@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Professional Portfolio</title>
-    <link rel="icon" href="https://i.ibb.co/7y3L6Tr/Black-and-White-Minimalist-Monochrome-Letter-M-Professional-Business-Salon-Logo.png" type="image/png">
+    <title>Portfólio Mariana Moura</title>
+<link rel="icon" href="https://i.ibb.co/7y3L6Tr/Black-and-White-Minimalist-Monochrome-Letter-M-Professional-Business-Salon-Logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <style>
         * {
@@ -22,7 +22,8 @@
 
         header {
             display: flex;
-            align-items: center; /* Centraliza verticalmente */
+            justify-content: space-between;
+            align-items: center;
             padding: 20px 50px;
             background-color: #ffffff;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -34,13 +35,11 @@
         header h1 {
             font-size: 24px;
             font-weight: 500;
-            margin-left: 20px; /* Adicionando um espaço à esquerda do título */
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            margin-left: auto; /* Alinha os itens do menu à direita */
         }
 
         nav ul li {
@@ -65,24 +64,15 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            position: relative; /* Para posicionar o logo acima do texto */
             background: url('https://i.ibb.co/kxmydW5/Portf-lio-Giorno.png') center center no-repeat;
             background-size: cover;
-        }
-
-        .hero img {
-            position: absolute; /* Logo posicionado em relação à hero */
-            top: 50px; /* Distância do topo */
-            z-index: 1; /* Coloca o logo acima do texto */
-            max-width: 100px; /* Define o tamanho máximo do logo */
+            position: relative;
         }
 
         .hero h2 {
             font-size: 48px;
             color: white;
             font-weight: 300;
-            position: relative; /* Para manter o texto acima do fundo */
-            z-index: 0; /* Abaixo do logo */
         }
 
         .hero p {
@@ -90,8 +80,6 @@
             color: white;
             margin-top: 10px;
             font-weight: 300;
-            position: relative; /* Para manter o texto acima do fundo */
-            z-index: 0; /* Abaixo do logo */
         }
 
         .hero a {
@@ -103,8 +91,6 @@
             display: inline-block;
             font-weight: 500;
             transition: all 0.3s ease;
-            position: relative; /* Para manter o texto acima do fundo */
-            z-index: 0; /* Abaixo do logo */
         }
 
         .hero a:hover {
@@ -118,16 +104,15 @@
 
         .about {
             display: flex;
-            align-items: flex-start; /* Alinha o texto e a imagem no início */
-            justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-            text-align: left; /* Alinha o texto à esquerda */
+            align-items: center;
+            justify-content: flex-start; /* Alterado para alinhar ao início */
+            flex-wrap: wrap;
         }
 
         .about img {
             max-width: 50%;
             border-radius: 0px;
             margin-right: 20px; /* Adicionado um espaço à direita da imagem */
-            margin-bottom: 20px; /* Aumentando a distância entre a imagem e o texto */
         }
 
         .about-text {
@@ -277,7 +262,6 @@
     </header>
 
     <section class="hero">
-        <img src="https://i.ibb.co/yfSG9N4/SEI-LA.png" alt="Logo">
         <h2>Seja bem vindo ao meu Portfólio de Arte Digital</h2>
         <p>O caminho é o objetivo.</p>
         <a href="#projects">Explore o meu trabalho</a>
@@ -289,7 +273,8 @@
             <h2>Quem sou eu?</h2>
             <p>Como <strong>designer plena</strong> com <strong>quatro anos de experiência</strong>, trago uma combinação sólida de habilidades técnicas e criatividade. Minha jornada como designer é marcada por <strong>certificações</strong> e <strong>diplomas</strong>, incluindo Adobe Illustrator e Photoshop, com mentores como <strong>Lucas Rosa</strong>, <strong>Alison Pawilak</strong> e <strong>Paula Cruz</strong> pela CreaHana. Atualmente estudo na <strong>FMU</strong> e na <strong>Escola SAGA</strong>, onde possuo diploma.</p>
             <p>Minha <strong>expertise</strong> abrange produção de conteúdo para social media, propagandas, sites, concept art, impressos (livros, cartões, totens, stans e etc), ilustração digital e <strong>animação 2D</strong>, apoiando meu trabalho em um profundo conhecimento técnico. Já atuei em <strong>empresas de marketing</strong>, agências e como <strong>freelancer</strong>, totalizando <strong>cinco anos de prática</strong> freelance.</p>
-            <p>Sou conhecida por minha <strong>postura calma e centrada</strong>, sempre entregando resultados de qualidade.</p>
+            <p>Sou conhecida por minha <strong>postura calma e centrada</strong>, sempre entregando resultados de qualidade. Minha habilidade em <strong>cumprir prazos</strong> é reforçada por minha propensão a superar expectativas, entregando antes mesmo do prazo final.</p>
+            <p>Na minha trajetória, enfrentei <strong>desafios de última hora</strong>, transformando obstáculos em oportunidades para demonstrar <strong>resiliência e eficiência</strong>. Minha paixão por manipulação digital se reflete em cada projeto, onde busco unir estética e funcionalidade.</p>
         </div>
     </section>
 
@@ -319,7 +304,7 @@
     </section>
 
     <footer id="contact">
-        <p>© 2024 Mariana Moura. Todos os direitos reservados.</p>
+        <p>© 2024 Your Name. All rights reserved.</p>
     </footer>
 
 </body>
