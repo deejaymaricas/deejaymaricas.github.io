@@ -123,7 +123,7 @@
         }
 
         .about img {
-            max-width: 35%;
+            max-width: 30%;
             border-radius: 0px;
             margin-right: 50px; /* Espaço à direita da imagem */
         }
@@ -144,29 +144,65 @@
             color: #6e6e73;
         }
 
-        .apple-button {
+        .button-container {
+            display: flex;
+            gap: 20px; /* Espaço entre os botões */
+            margin-top: 30px; /* Espaço superior para os botões */
+        }
+
+        .apple-button, .linkedin-button, .behance-button {
             display: inline-block;
             padding: 12px 24px;
             font-size: 16px;
             font-weight: 500;
             text-align: center;
+            border-radius: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 10px 0; /* Margem superior e inferior */
+        }
+
+        .apple-button {
+            background-color: #007aff;
             color: #fff;
-            background-color: #007aff; /* Cor azul do botão da Apple */
-            border: none;
-            border-radius: 30px; /* Borda arredondada */
-            text-decoration: none; /* Remove o sublinhado */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
-            transition: background-color 0.3s ease, transform 0.2s ease; /* Animações suaves */
-            margin-top: 20px; /* Espaçamento superior do botão */
         }
 
         .apple-button:hover {
-            background-color: #005bb5; /* Cor azul mais escura ao passar o mouse */
-            transform: translateY(-2px); /* Levanta o botão */
+            background-color: #005bb5;
+            transform: translateY(-2px);
         }
 
         .apple-button:active {
-            transform: translateY(2px); /* Efeito de pressionar o botão */
+            transform: translateY(2px);
+        }
+
+        .linkedin-button {
+            background-color: #0077b5; /* Azul do LinkedIn */
+            color: #fff;
+        }
+
+        .linkedin-button:hover {
+            background-color: #005c8a;
+            transform: translateY(-2px);
+        }
+
+        .linkedin-button:active {
+            transform: translateY(2px);
+        }
+
+        .behance-button {
+            background-color: #868686; /* Cinza do Behance */
+            color: #fff;
+        }
+
+        .behance-button:hover {
+            background-color: #707070;
+            transform: translateY(-2px);
+        }
+
+        .behance-button:active {
+            transform: translateY(2px);
         }
 
         .projects {
@@ -254,23 +290,22 @@
     <section class="hero">
         <h2>Seja bem-vindo ao meu Portfólio de Arte Digital</h2>
         <p>O caminho é o objetivo.</p>
-        <a href="#projects">Explore o meu trabalho</a>
+        <a href="#projects">Veja meus projetos</a>
     </section>
 
     <section id="about" class="about">
-        <img src="https://i.ibb.co/2Wndzbg/euuu.png" alt="About Me">
+        <img src="https://i.ibb.co/kX1rf2p/PHOTO-2023-11-22-17-31-14.jpg" alt="Mariana Moura">
         <div class="about-text">
             <h2>Quem sou eu?</h2>
-            <p>Como <strong>designer plena</strong> com <strong>quatro anos de experiência</strong>, trago uma combinação sólida de habilidades técnicas e criatividade. Minha jornada como designer é marcada por <strong>certificações e diplomas</strong>, incluindo Adobe Illustrator e Photoshop, com mentores como <strong>Lucas Rosa</strong>, <strong>Alison Pawilak</strong> e <strong>Paula Cruz</strong> pela CreaHana. Atualmente estudo na <strong>FMU</strong> e na <strong>Escola SAGA</strong>, onde possuo diploma.</p>
-            <br>
+            <p>Meu nome é <strong>Mariana Moura</strong> e sou uma designer digital apaixonada por arte e inovação. Com formação em <strong>Design Gráfico</strong> pela <strong>Escola SAGA</strong>, onde possuo diploma.</p>
             <p>Minha <strong>expertise</strong> abrange produção de conteúdo para social media, propagandas, sites, concept art, impressos (livros, cartões, totens, stans e etc), ilustração digital e <strong>animação 2D</strong>, apoiando meu trabalho em um profundo conhecimento técnico. Já atuei em <strong>agências e como freelancer.</strong></p>
-            <br>
             <p>Sou conhecida por minha <strong>postura calma e centrada</strong>, sempre entregando resultados de qualidade. Minha habilidade em <strong>cumprir prazos</strong> é reforçada por minha propensão a superar expectativas, entregando antes mesmo do prazo final.</p>
-            <br> 
             <p>Na minha trajetória, enfrentei <strong>desafios de última hora</strong>, transformando obstáculos em oportunidades para demonstrar <strong>resiliência e eficiência</strong>. Minha paixão por manipulação digital se reflete em cada projeto, onde busco unir estética e funcionalidade.</p>
-            <a href="https://www.behance.net/marianaartworks" target="_blank">
-                <button class="apple-button">Visitar Behance</button>
-            </a>
+
+            <div class="button-container">
+                <a href="https://www.behance.net/marianaartworks" class="behance-button">Visitar Behance</a>
+                <a href="https://www.linkedin.com/in/marianamourajj" class="linkedin-button">Visitar LinkedIn</a>
+            </div>
         </div>
     </section>
 
